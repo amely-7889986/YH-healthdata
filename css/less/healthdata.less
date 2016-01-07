@@ -2,40 +2,166 @@
     width: 98%;
     display: block;
     margin-top: 20px;
+    margin-left: 20px;
+    li{
+        float: left;
+        display: block;
+        width: 322px;
+        height: auto;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: visible;
+   }
 }
-.healthdata ul.col-data{
-    >li{
-        display: inline-block;
+.col-data{
+        display: block;
         width: 320px;
         height: 124px;
         float: left;
         margin-right: 20px;
         background: #fff;
         border: 1px solid #3799dc;
+        box-shadow: 0 0 5px #ddd;
+        -moz-box-shadow: 0 0 5px #ddd;
+        position: relative;
+        z-index: 9999;
         .icon-pic{
             display: inline-block;
             width: 130px;
             height: 124px;
             float: left;
         }
+        .data-info{
+            display: inline-block;
+            width: 190px;
+            height: 124px;
+            float: left;
+            .data-tit{
+                height: 46px;
+                line-height: 46px;
+                font-size: 18px;
+                color: #006699;
+                font-weight: bold;
+                padding-left: 16px;
+            }
+            .data-mes{
+                display: block;
+                font-size: 12px;
+                line-height: 18px;
+                padding-bottom: 12px;
+                padding-left: 16px;
+                border-bottom: 1px solid #3799dc;
+                color: #434343;
+            }
+        }
         .tall{
             background: url(../../images/icon-height.png) center center no-repeat;
         }
+        .fate{
+            background: url(../../images/icon-fate.png) center center no-repeat;
+        }
+        .b-presssure{
+            background: url(../../images/icon-bloodpressure.png) center center no-repeat;
+        }
+        .oxygen{
+            background: url(../../images/icon-oxygen.png) center center no-repeat;
+        }
+        .ecg{
+            background: url(../../images/icon-ecg.png) center center no-repeat;
+        }
+        .tem{
+            background: url(../../images/icon-tem.png) center center no-repeat;
+        }
+        .waisthip{
+            background: url(../../images/icon-waisthip.png) center center no-repeat;
+        }
+        .bloodsugar{
+            background: url(../../images/icon-bloodsugar.png) center center no-repeat;
+        }
+}
+.menu_head{
+    color: #006699;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 46px;
+    cursor:pointer;
+    i{
+        display: inline-block;
+        float: left;
+        width: 20px;
+        height: 22px;
+        margin-top: 4px;
+        background: url(../../images/icon-datamore.png) center center no-repeat;
+    }
+    span{
+        display: inline-block;
+        float: left;
+        margin-left: 8px;
     }
 }
-.data-menu{
+.menu_list .current{
+    color: #006699;
     display: inline-block;
-    position: relative;
-    top: 10px;
-    left: 0;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 46px;
+    cursor:pointer;
+    i{
+        display: inline-block;
+        float: left;
+        width: 20px;
+        height: 22px;
+        margin-top: 4px;
+        background: url(../../images/icon-datamore.png) center center no-repeat;
+    }
+    span{
+        display: inline-block;
+        float: left;
+        margin-left: 8px;
+    }
+}
+.menu_body{
+    display: none;
     width: 320px;
-    height: auto;
-    background: #fff;
-    border: 1px solid #3799dc;
-    li{
+    position: relative;
+    top: 16px;
+    z-index: -1;
+    .menu-dec{
         display: block;
+        height: 12px;
+        position: relative;
+        top: 115px;
+        background: url(../../images/icon-menubg.png) top center no-repeat;
+    }
+    a{
+        display: block;
+        width: 318px;
         height: 34px;
         line-height: 34px;
-        border-bottom: 1px solid #3799dc;
+        border: 1px solid #3799dc;
+        background: #fff;
+        overflow: hidden;
+        box-shadow: 0 0 5px #ddd;
+        -moz-box-shadow: 0 0 5px #ddd;
+        margin-top: -1px;
+        cursor:pointer;
+    }
+    .data-link{
+        display: inline-block;
+        width: 84px;
+        text-indent: 10px;
+    }
+    .data-para{
+        display: inline-block;
+        width: 120px;
+        color: #434343;
+    }
+    .data-slot{
+        display: inline-block;
+        color: #7d7d7d;
+        text-align: right;
+        font-size: 12px;
     }
 }
